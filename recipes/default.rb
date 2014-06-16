@@ -8,10 +8,10 @@ db = data_bag_item("servers",nodename)
 interfaces = db['interfaces']
 
 
-service "networking" do
-	service_name "networking"
-  action :restart
-end
+#service "networking" do
+#	service_name "networking"
+#  action :restart
+#end
 
 template "/etc/network/interfaces" do
 	source "interfaces.erb"
